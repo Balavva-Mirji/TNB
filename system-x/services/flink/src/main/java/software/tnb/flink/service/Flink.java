@@ -12,10 +12,23 @@ public abstract class Flink extends Service<NoAccount, NoClient, NoValidation> i
 
     public abstract String host();
 
-    public abstract int port();
-
     @Override
     public String defaultImage() {
         return "quay.io/fuse_qe/flink:java17";
+    }
+    public int port() {
+        return PORT;
+    }
+
+    public void deploy() {
+    }
+
+    public void undeploy() {
+    }
+
+    public void openResources() {
+    }
+
+    public void closeResources() {
     }
 }
